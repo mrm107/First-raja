@@ -3,7 +3,7 @@
 
 ///--------------------Top-Header--------------------///
 html{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .container{
     width: 100%;
@@ -21,6 +21,9 @@ header.header{
 }
 .top-header-container{
     background-color: $color-gray;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
 }
 header.top-header{
     width: 100%;
@@ -157,22 +160,28 @@ header.top-header{
     }
     
 }
-
+.hamburger-menu-rotate{
+    transform: rotateZ(45deg);
+    background-color: #DC316E;
+}
 .hamburger-menu{
-    background-image: url("../img/menu.png");
-    background-position: center;
-    background-repeat: no-repeat;
     display: none;
-    width: 60px;
-    height: 60px;
+    padding: 10px;
+    transition: 1s;
+    &>.hamburger-item{
+        background-color: black;
+        width: 30px;
+        height: 2px;
+        transition: .5s;
+    }
     &>#hamburger{
         display: none;
     }
-    &>input:checked ~.test{
-        position: absolute;
-        width: 100%;
-        display: block;
-        background-color: #2C9564;
+    &>input:checked ~.hamburger-item:nth-of-type(1){
+        transform: rotateZ(90deg) translateX(6px) ;
+    }
+    &>input:checked ~.hamburger-item:nth-of-type(3){
+        width: 0;
     }
 }
 
@@ -180,7 +189,7 @@ header.top-header{
 ///--------------------bottom-Header--------------------///
 .bottom-header-container{
     background: linear-gradient(99.54deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 72.01%), #2C9564;
-
+    margin-top: 64px;
 }
 header.bottom-header{
     width: 100%;
@@ -300,8 +309,23 @@ header.bottom-header{
     padding: 28px 0;
     font-size: 32px;
     &>.card{
-        img{
+        &>.banner{
             width: 50%;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1s;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        &:hover .banner>img{
+            transform: scale(1.2);
+        }
+        &:hover {
+            box-shadow: 0 5px 10px 2px rgb(233, 233, 233);
         }
         display: flex;
         overflow: hidden;

@@ -1,7 +1,7 @@
 @media only screen and (max-width: 360px) {
   .card {
     width: 90% !important;
-    height: 408px;
+    height: 300px !important;
   }
   .top-footer {
     flex-direction: column;
@@ -17,13 +17,13 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   div.card {
     width: 80%;
     flex-direction: column !important;
-    height: 450px !important;
+    height: 400px !important;
   }
-  div.card > img {
+  div.card > .banner {
     width: 100% !important;
     height: 154px !important;
   }
@@ -72,7 +72,7 @@
   .bottom-header {
     font-size: 16px !important;
   }
-  .bottom-header .path {
+  .bottom-header .breadcrumb {
     font-size: 1em;
     margin-right: 1em;
   }
@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 992px) {
   .top-header {
     justify-content: space-between !important;
     z-index: 100;
@@ -103,13 +103,13 @@
     height: auto !important;
     width: 300px !important;
     position: absolute !important;
-    left: -500px;
-    top: 64px;
+    top: -1000px;
+    left: 0;
     flex-direction: column !important;
     justify-content: flex-start !important;
     justify-content: flex-start !important;
     background-color: #FAFAFA;
-    box-shadow: 0 5px 10px 0.5px #666666;
+    box-shadow: 0 5px 5px 0.5px #666666;
   }
   .top-header .navbar .menu {
     width: 100%;
@@ -144,7 +144,11 @@
     width: 90% !important;
   }
   .top-header .hamburger-menu {
-    display: block !important;
+    display: flex !important;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     margin-left: 20px;
   }
   .card {
@@ -155,7 +159,7 @@
   }
 }
 
-@media only screen and (max-width: 1088px) {
+@media only screen and (max-width: 1200px) {
   .top-header {
     font-size: 13px !important;
   }
@@ -184,7 +188,7 @@
   }
 }
 
-@media only screen and (min-width: 1088px) {
+@media only screen and (min-width: 1200px) {
   .search {
     width: 260px;
   }
