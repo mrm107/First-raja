@@ -1,0 +1,176 @@
+@media only screen and (max-width: 360px) {
+  .card {
+    width: 90% !important;
+    height: 408px;
+  }
+  .top-footer {
+    flex-direction: column;
+    padding: 16px 10px !important;
+    gap: 20px;
+  }
+  .search {
+    position: relative !important;
+    background-color: transparent !important;
+  }
+  .search input {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.card {
+    width: 80%;
+    flex-direction: column !important;
+    height: 450px !important;
+  }
+  div.card > img {
+    width: 100% !important;
+    height: 154px !important;
+  }
+  div.card > .info {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  div.card > .info .description {
+    max-height: 84px !important;
+  }
+  div.card > .info .continue {
+    bottom: 12px !important;
+  }
+  .top-header {
+    justify-content: space-between !important;
+  }
+  .top-header .logo {
+    margin-right: 16px;
+  }
+  .top-header .navbar {
+    padding: 20px 0;
+    height: auto !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: -1000px;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background-color: #FAFAFA;
+    box-shadow: 0 5px 10px 0.5px #666666;
+  }
+  .top-header .navbar .menu {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .top-header .navbar .languages {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .top-header .hamburger-menu {
+    display: block !important;
+    margin-left: 16px;
+  }
+  .socails {
+    display: none;
+  }
+  .bottom-header {
+    font-size: 16px !important;
+  }
+  .bottom-header .path {
+    font-size: 1em;
+    margin-right: 1em;
+  }
+  .bottom-header .title {
+    margin-right: .5em;
+  }
+  .top-footer {
+    font-size: 16px;
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 20px;
+  }
+  .top-footer .footer-info, .top-footer .quick-access {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .top-header {
+    justify-content: space-between !important;
+    z-index: 100;
+  }
+  .top-header .logo {
+    margin-right: 20px;
+  }
+  .top-header .navbar {
+    padding: 20px 0;
+    height: auto !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: -1000px;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background-color: #FAFAFA;
+    box-shadow: 0 5px 10px 0.5px #666666;
+  }
+  .top-header .navbar .menu {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  .top-header .navbar .languages {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .top-header .hamburger-menu {
+    display: block !important;
+    margin-left: 20px;
+  }
+  .search {
+    position: relative !important;
+    background-color: transparent !important;
+  }
+  .search input {
+    width: 90% !important;
+  }
+  .card {
+    width: 90%;
+  }
+  .top-footer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1088px) {
+  .top-header {
+    font-size: 13px !important;
+  }
+  .search {
+    position: absolute;
+    background-color: #F5F5F5;
+    width: fit-content;
+    left: 10px;
+  }
+  .search .search-submit {
+    padding-right: 13px;
+  }
+  .search input {
+    width: 0;
+  }
+  .search:hover input {
+    width: 90%;
+    background-color: #2C9564;
+  }
+  .card {
+    width: 90%;
+  }
+  .top-footer {
+    padding: 30px 30px;
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1088px) {
+  .search {
+    width: 260px;
+  }
+  .search > input {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

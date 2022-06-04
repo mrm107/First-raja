@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("../../font/Shabnam-FD.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Shabnam;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+li {
+  list-style: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*# sourceMappingURL=static.css.map */

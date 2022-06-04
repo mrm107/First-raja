@@ -1,0 +1,35 @@
+$color-gray : #FAFAFA;
+$color-black : #111111;
+$t-color-gray:#CCCCCC;
+$color-green :#2C9564 ;
+$color-background:#F5F5F5;
+$color-gary-3: #666666;
+$color-gary-2: #999999;
+$border : #EEEEEE;
+$color-white : #FFFFFF;
+@font-face {
+    font-family: Shabnam;
+    src: url("../../font/Shabnam-FD.woff");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Shabnam;
+}
+body{
+    background-color: $color-background;
+}  
+a{
+    text-decoration: none;
+    color: $color-black;
+}
+li{
+    list-style: none;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
