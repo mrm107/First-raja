@@ -112,22 +112,48 @@ $color-white : #FFFFFF;
             margin-right: 20px;
         }
         .navbar{
-            padding: 20px 0;
+            padding: 20px 20px;
             height: auto !important;
-            width: 100% !important;
+            width: 300px !important;
             position: absolute !important;
-            top: -1000px;
+            left: -500px;
+            top:64px;
             flex-direction: column !important;
-            justify-content: space-between !important;
+            justify-content: flex-start !important;
+            justify-content: flex-start !important;
             background-color: $color-gray;
             box-shadow: 0 5px 10px .5px $color-gary-3;
             .menu{
                 width: 100%;
                 flex-direction: column !important;
+                justify-content: flex-start !important;
+                align-items: flex-start !important;
+                &>li{
+                    &>a{
+                        padding: 8px 8px !important;
+                    }
+                    display: flex !important;
+                    flex-direction: row !important;
+                    &>a::before{
+                        width: 3px !important;
+                        height: 0 !important;
+                    }
+                    &>a:hover::before{
+                        height: 100% !important;
+                    }
+                }
             }
             .languages{
                 width: 100% !important;
-                justify-content: center !important;
+                justify-content: flex-start !important;
+            }
+            .search{
+                align-self: flex-start !important;
+                position: relative !important;
+                background-color: transparent !important;
+                input{
+                    width: 90% !important ;
+                }
             }
         }
         .hamburger-menu{
@@ -135,14 +161,7 @@ $color-white : #FFFFFF;
             margin-left: 20px;
         }
     }
-    .search{
-        position: relative !important;
-        background-color: transparent !important;
-        
-        input{
-            width: 90% !important ;
-        }
-    }
+    
     .card{
         width: 90% ;
     }

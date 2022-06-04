@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    display: block;
+}
+.container{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* background-color: aquamarine; */
+}
+
+.link{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: beige;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.link:hover{
+    background-color: rgb(170, 101, 235);
+}

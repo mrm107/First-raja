@@ -1,12 +1,12 @@
 $(".hamburger-menu").click(function (e) { 
     if($("#hamburger").is(':checked')){
         $(".navbar").animate({
-            "top": "64px",
+            "left": "0",
         }); 
     }
     else{
         $(".navbar").animate({
-            "top": "-1000px",
+            "left": "-500px",
         });
     }
        

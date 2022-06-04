@@ -1,6 +1,6 @@
 @font-face {
   font-family: Shabnam;
-  src: url("../../font/Shabnam-FD.woff");
+  src: url("../font/Shabnam-FD.woff");
 }
 
 * {
@@ -32,44 +32,44 @@ li {
 
 @keyframes tele {
   50% {
-    transform: scale(1.2) translateY(-130px) translateX(200px);
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1.2) translateY(0) translateX(0) rotateZ(180deg);
+    transform: scale(1.2);
   }
 }
 
 @keyframes copy {
   0% {
-    transform: scale(1.2);
   }
   10% {
-    transform: scale(1.2) translateX(-4px);
+    transform: translateX(-4px);
   }
   20% {
-    transform: scale(1.2) translateX(6px);
+    transform: translateX(6px);
   }
   30% {
-    transform: scale(1.2) translateX(-7px);
+    transform: translateX(-7px);
   }
   40% {
-    transform: scale(1.2) translateX(7px);
+    transform: translateX(7px);
   }
   50% {
-    transform: scale(1.2) translateX(-7px);
+    transform: translateX(-7px);
   }
   60% {
-    transform: scale(1.2) translateX(7px);
+    transform: translateX(7px);
   }
   70% {
-    transform: scale(1.2) translateX(-6px);
+    transform: translateX(-6px);
   }
   80% {
-    transform: scale(1.2) translateX(4px);
+    transform: translateX(4px);
   }
-  100% {
-    transform: scale(1.2);
-  }
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .container {
@@ -120,7 +120,6 @@ header.top-header > .navbar > .menu {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 1em;
@@ -140,6 +139,7 @@ header.top-header > .navbar > .menu > li .active-menu::before {
 }
 
 header.top-header > .navbar > .menu > li > a {
+  padding: 0 8px;
   cursor: pointer;
   height: 100%;
   display: flex;
@@ -148,10 +148,12 @@ header.top-header > .navbar > .menu > li > a {
 }
 
 header.top-header > .navbar > .menu > li > a::before {
+  padding: 0;
   content: "";
   width: 0;
   position: absolute;
   top: 0;
+  right: 0;
   height: 3px;
   display: block;
   background-color: #2C9564;
@@ -240,7 +242,7 @@ header.top-header > .navbar > .languages > #lang > option {
 }
 
 .hamburger-menu {
-  background-image: url("../../img/menu.png");
+  background-image: url("../img/menu.png");
   background-position: center;
   background-repeat: no-repeat;
   display: none;
@@ -274,7 +276,7 @@ header.bottom-header {
   font-size: 32px;
 }
 
-.path {
+.breadcrumb {
   margin-right: 8em;
   display: flex;
   flex-direction: row;
@@ -284,15 +286,30 @@ header.bottom-header {
   line-height: 28px;
 }
 
-.path > li {
+.breadcrumb > .breadcrumb-item {
   color: #999999;
   cursor: pointer;
 }
 
-.path > li:hover {
+.breadcrumb > .breadcrumb-item::before {
+  content: "/";
+}
+
+.breadcrumb > .breadcrumb-item:hover {
   color: #FFFFFF;
   margin: 0 10px;
   transform: scale(1.2);
+}
+
+.breadcrumb > .active::before {
+  content: "";
+}
+
+.breadcrumb > .active:hover {
+  color: #999999;
+  cursor: default;
+  transform: scale(1);
+  margin: 0;
 }
 
 .title {
@@ -315,6 +332,9 @@ header.bottom-header {
 }
 
 .socails > .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   background: rgba(250, 250, 250, 0.3);
@@ -327,30 +347,41 @@ header.bottom-header {
   transition: .5s;
 }
 
-.socails > :nth-child(1):hover {
-  background: #2C9564;
+.socails > .social > i {
+  font-size: 20px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.socails > :nth-child(1):hover > img {
+.socails > :nth-child(1):hover {
+  background: #EEEEEE;
+}
+
+.socails > :nth-child(1):hover > i {
   animation: copy 1s;
   transition: 1s;
+  color: black;
 }
 
 .socails > :nth-child(2):hover {
-  background: #2C9564;
+  background: #EEEEEE;
 }
 
-.socails > :nth-child(2):hover > img {
+.socails > :nth-child(2):hover > i {
   animation: tele 2s;
+  color: #219DD3;
 }
 
 .socails > :nth-child(3):hover {
-  background: #2C9564;
+  background: #EEEEEE;
 }
 
-.socails > :nth-child(3):hover > img {
+.socails > :nth-child(3):hover > i {
   transform: scale(1.2) rotate(360deg);
   transition: 1s;
+  color: #58C383;
 }
 
 .main {
@@ -587,16 +618,16 @@ header.bottom-header {
 }
 
 .top-footer .footer-info .site-info .socials > :nth-child(1) {
-  background-image: url("../../img/telegram.svg");
+  background-image: url("../img/telegram.svg");
 }
 
 .top-footer .footer-info .site-info .socials > :nth-child(2) {
-  background-image: url("../../img/insta-white.jpg");
+  background-image: url("../img/insta-white.jpg");
   background-color: #DC316E;
 }
 
 .top-footer .footer-info .site-info .socials > :nth-child(3) {
-  background-image: url("../../img/twiter.svg");
+  background-image: url("../img/twiter.svg");
 }
 
 .top-footer .quick-access {
@@ -772,34 +803,53 @@ header.bottom-header {
     margin-right: 20px;
   }
   .top-header .navbar {
-    padding: 20px 0;
+    padding: 20px 20px;
     height: auto !important;
-    width: 100% !important;
+    width: 300px !important;
     position: absolute !important;
-    top: -1000px;
+    left: -500px;
+    top: 64px;
     flex-direction: column !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
+    justify-content: flex-start !important;
     background-color: #FAFAFA;
     box-shadow: 0 5px 10px 0.5px #666666;
   }
   .top-header .navbar .menu {
     width: 100%;
     flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .top-header .navbar .menu > li {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .top-header .navbar .menu > li > a {
+    padding: 8px 8px !important;
+  }
+  .top-header .navbar .menu > li > a::before {
+    width: 3px !important;
+    height: 0 !important;
+  }
+  .top-header .navbar .menu > li > a:hover::before {
+    height: 100% !important;
   }
   .top-header .navbar .languages {
     width: 100% !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
+  }
+  .top-header .navbar .search {
+    align-self: flex-start !important;
+    position: relative !important;
+    background-color: transparent !important;
+  }
+  .top-header .navbar .search input {
+    width: 90% !important;
   }
   .top-header .hamburger-menu {
     display: block !important;
     margin-left: 20px;
-  }
-  .search {
-    position: relative !important;
-    background-color: transparent !important;
-  }
-  .search input {
-    width: 90% !important;
   }
   .card {
     width: 90%;
