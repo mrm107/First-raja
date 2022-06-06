@@ -69,5 +69,12 @@ function Stick(e) {
   }
 }
 
-
-
+let hover=0;
+$(".banner img").hover(function () {
+        hover++;
+    }, function () {
+        if(hover === 3){
+            $(".banner").text("خوشت اومده ها!!!");
+        }
+    }
+);

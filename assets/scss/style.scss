@@ -372,6 +372,9 @@ header.bottom-header{
     font-size: 32px;
     &>.card{
         &>.banner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 50%;
             overflow: hidden;
         }
