@@ -58,10 +58,6 @@
     width: 100%;
     flex-direction: column !important;
   }
-  .top-header .navbar .languages {
-    width: 100% !important;
-    justify-content: center !important;
-  }
   .top-header .hamburger-menu {
     display: block !important;
     margin-left: 16px;
@@ -99,7 +95,7 @@
     margin-right: 20px;
   }
   .top-header .navbar {
-    padding: 20px 20px;
+    padding: 20px;
     height: auto !important;
     width: 300px !important;
     position: absolute !important;
@@ -132,8 +128,9 @@
     height: 100% !important;
   }
   .top-header .navbar .languages {
+    cursor: pointer;
     width: 100% !important;
-    justify-content: flex-start !important;
+    height: 64px !important;
   }
   .top-header .navbar .search {
     align-self: flex-start !important;

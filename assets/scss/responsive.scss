@@ -69,10 +69,10 @@ $color-white : #FFFFFF;
                 width: 100%;
                 flex-direction: column !important;
             }
-            .languages{
-                width: 100% !important;
-                justify-content: center !important;
-            }
+            // .languages{
+            //     width: 100% !important;
+            //     justify-content: center !important;
+            // }
         }
         .hamburger-menu{
             display: block !important;
@@ -112,7 +112,7 @@ $color-white : #FFFFFF;
             margin-right: 20px;
         }
         .navbar{
-            padding: 20px 20px;
+            padding: 20px;
             height: auto !important;
             width: 300px !important;
             position: absolute !important;
@@ -144,8 +144,11 @@ $color-white : #FFFFFF;
                 }
             }
             .languages{
+            cursor: pointer;
+
                 width: 100% !important;
-                justify-content: flex-start !important;
+                height: 64px !important;
+
             }
             .search{
                 align-self: flex-start !important;

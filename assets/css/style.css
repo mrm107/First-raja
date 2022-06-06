@@ -240,24 +240,62 @@ header.top-header > .navbar > .search > input::placeholder {
 }
 
 header.top-header > .navbar > .languages {
+  position: relative;
   height: 100%;
+  width: 150px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  pointer-events: stroke;
 }
 
-header.top-header > .navbar > .languages > #lang {
-  width: 100px;
+header.top-header > .navbar > .languages > #lang-toggle {
+  cursor: pointer;
+  padding: 0 10px;
+  text-align: right;
+  position: absolute;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   height: 80%;
   background-color: transparent;
-  outline: none;
   border: none;
 }
 
-header.top-header > .navbar > .languages > #lang > option {
-  width: 100px;
-  font-size: 1em;
-  margin: 30px;
+header.top-header > .navbar > .languages > #lang-toggle i {
+  transition: 1s;
+}
+
+header.top-header > .navbar > .languages > #lang-toggle:hover {
+  color: #58C383;
+}
+
+header.top-header > .navbar > .languages > .lang-menu {
+  width: 100%;
   background-color: #FAFAFA;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+header.top-header > .navbar > .languages > .lang-menu > .active {
+  color: #58C383;
+}
+
+header.top-header > .navbar > .languages > .lang-menu > .lang-item {
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+header.top-header > .navbar > .languages > .lang-menu > .lang-item:hover {
+  background-color: #b5dbca69;
 }
 
 .hamburger-menu-rotate {
@@ -814,10 +852,6 @@ header.bottom-header {
     width: 100%;
     flex-direction: column !important;
   }
-  .top-header .navbar .languages {
-    width: 100% !important;
-    justify-content: center !important;
-  }
   .top-header .hamburger-menu {
     display: block !important;
     margin-left: 16px;
@@ -855,7 +889,7 @@ header.bottom-header {
     margin-right: 20px;
   }
   .top-header .navbar {
-    padding: 20px 20px;
+    padding: 20px;
     height: auto !important;
     width: 300px !important;
     position: absolute !important;
@@ -888,8 +922,9 @@ header.bottom-header {
     height: 100% !important;
   }
   .top-header .navbar .languages {
+    cursor: pointer;
     width: 100% !important;
-    justify-content: flex-start !important;
+    height: 64px !important;
   }
   .top-header .navbar .search {
     align-self: flex-start !important;
