@@ -52,10 +52,12 @@ function test(){
     if (current > 64 && lastpos===0){
         lastpos=1;
         Stick(1);
+        show_hide_gototop(1);
     }
     if(current < 64 && lastpos===1){
         lastpos=0;
         Stick(0);
+        show_hide_gototop(0);
     }
 }
 
@@ -69,12 +71,37 @@ function Stick(e) {
   }
 }
 
+
+function show_hide_gototop(status){
+    if(status===1){
+        $("#gototop").animate({
+            "right": "10px"
+        });
+
+    }
+    else{
+        $("#gototop").animate({
+            "right": "-100px"
+        });
+    }
+}
+function gototop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
 let hover=0;
 $(".banner img").hover(function () {
         hover++;
     }, function () {
-        if(hover === 3){
+        if(hover === 5){
             $(".banner").text("خوشت اومده ها!!!");
         }
     }
 );
+
+
+

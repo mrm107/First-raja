@@ -361,6 +361,23 @@ header.bottom-header{
 }
 
 ///--------------------Main--------------------///
+#gototop{
+    width: 40px;
+    height: 40px;
+    right: -100px;
+    bottom: 30px;
+    position: fixed;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-green;
+    color: $color-white;
+    transition: .5s;
+    cursor: pointer;
+    &:hover{
+        background-color: #58C383;
+    }
+}
 .main{
     background-color: $color-background;
     display: flex;
@@ -501,6 +518,11 @@ header.bottom-header{
             font-weight: 500;
             font-size: 18px;
             line-height: 28px;
+            &>i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             &:hover{
                 background-color: $color-green;
                 color: $color-gray;
