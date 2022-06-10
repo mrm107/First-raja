@@ -73,6 +73,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.flexi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -387,7 +393,6 @@ header.bottom-header {
   font-style: normal;
   font-weight: 700;
   font-size: 2em;
-  line-height: 88px;
   color: #FAFAFA;
 }
 
@@ -953,6 +958,9 @@ header.bottom-header {
     cursor: pointer;
     width: 100% !important;
     height: 64px !important;
+  }
+  .top-header .navbar .languages > .lang-menu {
+    top: -100% !important;
   }
   .top-header .navbar .search {
     align-self: flex-start !important;

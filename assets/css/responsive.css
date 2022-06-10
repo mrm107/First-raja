@@ -132,6 +132,9 @@
     width: 100% !important;
     height: 64px !important;
   }
+  .top-header .navbar .languages > .lang-menu {
+    top: -100% !important;
+  }
   .top-header .navbar .search {
     align-self: flex-start !important;
     position: relative !important;

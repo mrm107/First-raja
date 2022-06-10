@@ -144,11 +144,13 @@ $color-white : #FFFFFF;
                 }
             }
             .languages{
-            cursor: pointer;
-
+                cursor: pointer;
                 width: 100% !important;
                 height: 64px !important;
+                &>.lang-menu{
+                    top:-100% !important;
 
+                }
             }
             .search{
                 align-self: flex-start !important;

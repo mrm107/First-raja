@@ -19,9 +19,6 @@ $(".hamburger-menu").click(function (e) {
     }
        
 });
-
-
-
 $("#lang-toggle").click(function (e) { 
     $("#lang-toggle i").css({
         "transform" : "rotate(540deg)",
@@ -97,7 +94,7 @@ let hover=0;
 $(".banner img").hover(function () {
         hover++;
     }, function () {
-        if(hover === 5){
+        if(hover === 10){
             $(".banner").text("خوشت اومده ها!!!");
         }
     }
