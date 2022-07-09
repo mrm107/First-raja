@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="../assets/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../assets/css/line.css">
     <link rel="stylesheet" href="../assets/css/scrollbar.css">
-
+    <link rel="stylesheet" href="../assets/css/Goto.css">
 </head>
 <body>
     
     <header class="header">
-        <div class="top-header-container container">
+        <div class="top-header-container container const">
             <header class="top-header">
                 <div class="logo"><img src="../assets/img/logo.png" alt=""></div>
                 <nav class="navbar">
@@ -165,8 +165,8 @@
                 <a href="#" class="continue">ادامه مقاله</a>
             </div>
         </div>
+        <button onclick="gototop()" class="" id="gototop"><i class="bi bi-chevron-up"></i></button>
     </main>
-    <button onclick="gototop()" id="gototop"><i class="bi bi-chevron-up"></i></button>
     <section class="pagination">
         <div class="btn-container">
             <a href="#" class="number"><i class="bi bi-chevron-right"></i></a>
@@ -209,7 +209,10 @@
             <div class="copyright">تمام حقوق برای وبسايت خودشناسی محفوظ است - 1400</div>
         </footer>
     </footer>
+
     <script src="../assets/js/jquery3.6.js"></script>
     <script src="../assets/js/dynamic.js"></script>
+    <script src="../assets/js/goto.js"></script>
+
 </body>
 </html>

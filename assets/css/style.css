@@ -97,15 +97,20 @@ header.header {
 
 .top-header-container {
   background-color: #FAFAFA;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   box-shadow: 0 5px 5px 2px rgba(78, 78, 78, 0.11);
+  transition: 1s;
 }
 
 .sticky {
-  position: fixed;
-  z-index: 100;
-  animation: stick 1s;
+  transform: translateY(0px);
+}
+
+.unsticky {
+  transform: translateY(-64px);
+  box-shadow: none;
 }
 
 @keyframes stick {
@@ -114,6 +119,15 @@ header.header {
   }
   100% {
     top: 0px;
+  }
+}
+
+@keyframes unstick {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -64px;
   }
 }
 
@@ -457,25 +471,6 @@ header.bottom-header {
   transform: scale(1.2) rotate(360deg);
   transition: 1s;
   color: #58C383;
-}
-
-#gototop {
-  width: 40px;
-  height: 40px;
-  right: -100px;
-  bottom: 30px;
-  position: fixed;
-  display: block;
-  border: none;
-  border-radius: 50%;
-  background-color: #2C9564;
-  color: #FFFFFF;
-  transition: .5s;
-  cursor: pointer;
-}
-
-#gototop:hover {
-  background-color: #58C383;
 }
 
 .main {

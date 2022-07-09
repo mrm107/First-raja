@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("../font/Shabnam-FD.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Shabnam;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+li {
+  list-style: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#gototop {
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  background-color: #2C9564;
+  color: #FFFFFF;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#gototop:hover {
+  background-color: #58C383;
+}
+
+.gototop_show {
+  position: fixed;
+  right: 5px;
+}
+
+.gototop_hide {
+  position: fixed;
+  right: -60px;
+}
+/*# sourceMappingURL=Goto.css.map */
