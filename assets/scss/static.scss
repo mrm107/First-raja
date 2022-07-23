@@ -11,6 +11,24 @@ $color-white : #FFFFFF;
     font-family: Shabnam;
     src: url("../font/Shabnam-FD.woff");
   }
+.text-gray-100{
+    color:$color-gary-2 ;
+}
+.text-gray-200{
+    color:$color-gary-3 ;
+}
+.text-black{
+    color:$color-black ;
+}
+.text-green{
+    color:$color-green ;
+}
+.btn-nostyle{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}      
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +36,8 @@ $color-white : #FFFFFF;
     font-family: Shabnam;
 }
 body{
-    background-color: $color-background;
+    // background-color: $color-background;
+    background-color: #FAFAFA;
 }  
 a{
     text-decoration: none;
@@ -27,9 +46,241 @@ a{
 li{
     list-style: none;
 }
-.row{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+html{
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
+
+.gap-1{
+    gap: 7px;
+}
+.gap-2{
+    gap: 1rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.gap-4{
+    gap: 4rem;
+}
+.gap-5{
+    gap: 5rem;
+}
+
+
+
+
+$FontSizes : (
+    t-34: 34px,
+    t-28: 28px,
+    t-20: 20px,
+    t-18: 18px,
+    t-16: 16px,
+    t-14: 14px,
+);
+
+$FontWight : (
+    tw-700: 700,
+    tw-500: 500,
+    tw-400: 400,
+    tw-300: 300,
+);
+$LineHeight : (
+    th-46: 46px,
+    th-38: 38px,
+    th-36: 36px,
+    th-30: 30px,
+    th-28: 28px,
+    th-27: 27px,
+);
+
+@each $key, $value in $FontSizes 
+{
+  .#{$key} 
+  {
+    font-size: $value;
+  }
+}
+@each $key, $value in $LineHeight
+{
+  .#{$key} 
+  {
+    line-height: $value;
+  }
+}
+@each $key, $value in $FontWight 
+{
+  .#{$key} 
+  {
+    font-weight: $value;
+  }
+}
+
+
+@media only screen and (min-width: 922px){
+    @each $key, $value in $FontWight {
+        .#{$key}-lg{
+            font-weight: $value !important;
+        }
+    }
+    @each $key, $value in $FontSizes {
+        .#{$key}-lg{
+            font-size: $value !important;
+        }
+    }
+    @each $key, $value in $LineHeight {
+        .#{$key}-lg {
+            line-height: $value !important;
+        }
+    }
+    
+  }
+  @media only screen and (min-width: 768px){
+    @each $key, $value in $FontWight {
+        .#{$key}-md{
+            font-weight: $value !important;
+        }
+    }
+    @each $key, $value in $FontSizes {
+        .#{$key}-md{
+            font-size: $value !important;
+        }
+    }
+    @each $key, $value in $LineHeight {
+        .#{$key}-md {
+            line-height: $value !important;
+        }
+    }
+    
+  }
+
+  @media only screen and (min-width: 576px){
+    @each $key, $value in $FontWight {
+        .#{$key}-sm{
+            font-weight: $value !important;
+        }
+    }
+    @each $key, $value in $FontSizes {
+        .#{$key}-sm{
+            font-size: $value !important;
+        }
+    }
+    @each $key, $value in $LineHeight {
+        .#{$key}-sm {
+            line-height: $value !important;
+        }
+    }
+    
+  }
+
+
+// .t-34{
+//     font-weight: 700;
+//     font-size: 34px;
+//     line-height: 46px;
+// }
+
+// .t-28{
+//     font-weight: 700;
+//     font-size: 28px;
+//     line-height: 38px;
+// }
+// .t-20{
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 27px;
+// }
+// .t-18{
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 36px;
+// }
+// .t-14{
+//     font-weight: 300;
+//     font-size: 14px;
+//     line-height: 28px;
+// }
+
+// @media only screen and (min-width: 576px){
+//     .t-sm-34{
+//         font-weight: 700 !important;
+//         font-size: 34px !important;
+//         line-height: 46px !important;
+//     }
+//     .t-sm-28{
+//         font-weight: 700 !important;
+//         font-size: 28px !important;
+//         line-height: 38px !important;
+//     }
+//     .t-sm-20{
+//         font-weight: 700 !important;
+//         font-size: 20px !important;
+//         line-height: 27px !important;
+//     }
+//     .t-sm-18{
+//         font-weight: 400 !important;
+//         font-size: 18px !important;
+//         line-height: 36px !important;
+//     }
+//     .t-sm-14{
+//         font-weight: 300 !important;
+//         font-size: 14px !important;
+//         line-height: 28px !important;
+//     }
+
+// }
+
+// @media only screen and (min-width: 768px){
+//     .t-md-34{
+//         font-weight: 700 !important;
+//         font-size: 34px !important;
+//         line-height: 46px !important;
+//     }
+//     .t-md-28{
+//         font-weight: 700 !important;
+//         font-size: 28px !important;
+//         line-height: 38px !important;
+//     }
+//     .t-md-20{
+//         font-weight: 700 !important;
+//         font-size: 20px !important;
+//         line-height: 27px !important;
+//     }
+//     .t-md-18{
+//         font-weight: 400 !important;
+//         font-size: 18px !important;
+//         line-height: 36px !important;
+//     }
+//     .t-md-14{
+//         font-weight: 300 !important;
+//         font-size: 14px !important;
+//         line-height: 28px !important;
+//     }
+// }
+// @media only screen and (min-width: 992px){
+//     .t-lg-34{
+//         font-weight: 700 !important;
+//         font-size: 34px !important;
+//         line-height: 46px !important;
+//     }
+//     .t-lg-28{
+//         font-weight: 700 !important;
+//         font-size: 28px !important;
+//         line-height: 38px !important;
+//     }
+//     .t-lg-20{
+//         font-weight: 700 !important;
+//         font-size: 20px !important;
+//         line-height: 27px !important;
+//     }
+//     .t-lg-18{
+//         font-weight: 400 !important;
+//         font-size: 18px !important;
+//         line-height: 36px !important;
+//     }
+//     .t-lg-14{
+//         font-weight: 300 !important;
+//         font-size: 14px !important;
+//         line-height: 28px !important;
+//     }
+// }

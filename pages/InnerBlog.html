@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="Fa" dir="rtl" class="scroller">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../assets/bootstrap-5.1.3/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.1.3/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="../assets/css/MenuBar.css">
+    <link rel="stylesheet" href="../assets/css/Footer.css">
+    <link rel="stylesheet" href="../assets/css/InnerBlog.css">
+    <link rel="stylesheet" href="../assets/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/line.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/Goto.css">
+</head>
+
+<body >
+
+    <header class="header">
+        <div class="container-xl header-con">
+            <div class="logo"><img src="../assets/img/logo.png" alt=""></div>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#">آغاز</a></li>
+                    <li><a href="#">چرا خودشناسی</a></li>
+                    <li><a class="active-menu" href="#">منتخب صوت</a></li>
+                    <li><a href="#">جلسات</a></li>
+                    <li><a href="#">منتخب متن</a></li>
+                    <li><a href="#">شبكه های اجتماعی</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                </ul>
+                <div class="search">
+                    <button class="search-submit" type="submit"><i class="bi bi-search"></i></button>
+                    <input type="text" placeholder="جستجو">
+                </div>
+
+
+                <div class="languages">
+                    <button id="lang-toggle" type="button">فارسی <i class="bi bi-chevron-down"></i></button>
+                    <div class="lang-menu">
+                        <div class="lang-item active">فارسی</div>
+                        <div class="lang-item" onclick="clicked(this)">عربي</div>
+                        <a class="lang-item" href="#">English</a>
+                        <a class="lang-item" href="#">French</a>
+                    </div>
+                </div>
+            </nav>
+            <label for="hamburger" class="hamburger-menu">
+                <input type="checkbox" id="hamburger">
+                <div class="hamburger-item"></div>
+                <div class="hamburger-item"></div>
+                <div class="hamburger-item"></div>
+            </label>
+        </div>
+    </header>
+
+    <section class="intro-page">
+        <div class="container-xl flex-column">
+            <div
+                class="d-flex flex-column justify-content-start gap-2 flex-sm-wrap justify-content-sm-between flex-sm-row">
+                <ul class="breadcrumb ">
+                    <li class="breadcrumb-item hover-green">صفحه اصلی</li>
+                    <li class="breadcrumb-item hover-green">وبلاگ</li>
+                    <li class="breadcrumb-item active">خودشناسی</li>
+                </ul>
+                <h1 class="title">زنده بودن غير از زندگی كردن</h1>
+                <div class="d-flex gap-1 text-gray-100">
+                    <div class="d-flex gap-1 align-items-center">
+                        <div>34</div>
+                        <i class="bi bi-chat-right _icon"></i>
+                    </div>
+                    <div class="d-flex gap-1 align-items-center">
+                        <div>212</div>
+                        <i class="bi bi-heart _icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-page-img mt-4">
+                <img src="../assets/img/intropage.png" alt="">
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 my-4">
+                <div class="d-flex flex-row gap-2 flex-wrap text-gray-200">
+                    <div class="d-flex flex-row justify-content-between gap-1">
+                        <i class="bi bi-calendar _icon"></i>
+                        <div>1400/4/14</div>
+                    </div>
+                    <div class="d-flex flex-row gap-1 ">
+                        <i class="bi bi-clock _icon"></i>
+                        <div>زمان مطالعه: 6 دقيقه</div>
+                    </div>
+                    <div class="d-flex flex-row gap-1">
+                        <i class="bi bi-eye _icon"></i>
+                        <div>662 بازديد</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row gap-1 flex-wrap">
+                    <a class="tag">خودشناسی</a>
+                    <a class="tag">خودشناسی</a>
+                    <a class="tag">خودشناسی</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xl mb-5">
+        <article class="article-con">
+            <div class="article-head d-flex flex-row flex-wrap align-items-center justify-content-between gap-3">
+                <h1 class="text-black t-28 th-38 t-34-md th-46-md tw-700 ">زنده بودن غير از زندگی كردن</h1>
+                <div class="d-flex flex-row gap-2">
+                    <button class="icon-btn"><i class="bi bi-clipboard"></i></button>
+                    <button class="icon-btn"><i class="bi bi-telegram"></i></button>
+                    <button class="icon-btn"><i class="bi bi-whatsapp"></i></button>
+                </div>
+            </div>
+            <div class="subject-article">
+                <h3 class="text-gray-200 t-18 tw-500 th-30 t-20-md tw-700-md th-27-md">عنوان های كوچكتر از متن</h3>
+                <p class="text-gray-200 t-16 tw-400 th-28 t-18-md th-36-md">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جام
+                </p>
+            </div>
+            <div class="subject-article">
+                <h3 class="text-gray-200 t-18 tw-500 th-30 t-20-md tw-700-md th-27-md">عنوان های كوچكتر از متن</h3>
+                <p class="text-gray-200 t-16 tw-400 th-28 t-18-md th-36-md">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم
+                    ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیو
+                </p>
+            </div>
+            <div class="d-flex gap-1 text-gray-100 justify-content-end mt-5">
+                <div class="d-flex gap-1 align-items-center">
+                    <div>34</div>
+                    <i class="bi bi-chat-right _icon"></i>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                    <div>212</div>
+                    <i class="bi bi-heart _icon"></i>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="container-xl d-flex flex-column align-items-center py-5 " id="SliderParentContainer1">
+        <h1 class="text-black">
+            مقالات مرتبط
+        </h1>
+        <div class="Slider-con mt-3" id="SliderContainer1">
+            <div class="Slider" id="SliderGroup1">
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner1.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner2.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner3.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner1.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner4.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Slide SlideGroup1">
+                    <div class="_Card">
+                        <img src="../assets/img/banner5.png" alt="">
+                        <div class="_Card-content py-4 px-3">
+                            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-between">
+                                <a class="tag">خودشناسی</a>
+                                <p class="text-gray-200">1400/3/4</p>
+                            </div>
+                            <h1 class="_Card-title">زنده بودن غير از زندگی كردن</h1>
+                            <p class="text-gray-200 limit-line-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                                بهبود</p>
+                            <a class="_Card-continue" href="#">ادامه مطلب</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Slider-dots" id="SliderDotsGroup1">
+        </div>
+    </section>
+
+    <section class="container-xl my-5">
+        <div class="comment-con d-flex flex-column align-items-center">
+            <div class="comment-head d-flex flex-row flex-wrap justify-content-center gap-2">
+                <h1 class="text-black t-20 t-28-md tw-700">7 نظر ثبت شده است</h1>
+                <button onclick="SendCommentToggle()" class="send-comment-btn t-16 t-20-md tw-700">ارسال نظر</button>
+            </div>
+            <form id="SendComment" class="send-comment-con flex-column justify-content-between gap-2 my-5">
+                <textarea class="send-comment-input t-14 tw-400 th-28 t-18-md tw-300-md th-36-md" id="" cols="30"
+                    rows="7" placeholder="نظر شما"></textarea>
+                <div class="d-flex flex-column flex-sm-row gap-2">
+                    <input class="send-comment-input t-14 tw-400 th-28 t-18-md tw-300-md th-36-md" type="text"
+                        placeholder="نام و نام خانوادگی" name="" id="">
+                    <input class="send-comment-input t-14 tw-400 th-28 t-18-md tw-300-md th-36-md" type="email"
+                        placeholder="آدرس ايميل">
+                </div>
+                <button class="send-comment-submit align-self-center t-14 tw-400 th-28 t-18-md tw-300-md th-36-md"
+                    type="submit">ثبت نظر</button>
+            </form>
+            <div class="comments">
+                <div class="comment p-4 mt-4">
+                    <div class="comment-info d-flex flex-row justify-content-start gap-2 ">
+                        <img src="../assets/svg/profile.svg">
+                        <div class="d-flex flex-column gap-1">
+                            <span class="text-gray-200">كاربر مهمان</span>
+                            <span class="comment-date text-gray-100">1400/07/03 - 15:30</span>
+                        </div>
+                    </div>
+                    <div class="content mt-3 text-gray-200 t-18-md th-36-md tw-400 t-16 th-28">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        و
+                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+                        و
+                        آینده شناخت فراوان جام
+                    </div>
+                    <div class="comment-footer d-flex flex-row justify-content-between mt-2 align-items-center flex-wrap">
+                        <button class="d-flex flex-row gap-1 tw-400 t-18 th-36 btn-nostyle text-green"><i
+                                class="bi bi-reply-fill"></i> افزودن پاسخ</button>
+                        <div class="d-flex flex-row gap-2 text-gray-100">
+                            <div class="d-flex gap-1 align-items-center">
+                                <div>34</div>
+                                <i class="bi bi-chat-right _icon"></i>
+                            </div>
+                            <div class="d-flex gap-1 align-items-center">
+                                <div>212</div>
+                                <i class="bi bi-heart _icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment p-4 mt-4">
+                    <div class="comment-info d-flex flex-row justify-content-start gap-2 ">
+                        <img src="../assets/svg/profile.svg">
+                        <div class="d-flex flex-column gap-1">
+                            <span class="text-gray-200">كاربر مهمان</span>
+                            <span class="comment-date text-gray-100">1400/07/03 - 15:30</span>
+                        </div>
+                    </div>
+                    <div class="content mt-3 text-gray-200 t-18-md th-36-md tw-400 t-16 th-28">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها
+                        و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        و
+                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
+                        و
+                        آینده شناخت فراوان جام
+                    </div>
+                    <div class="comment-footer d-flex flex-row justify-content-between mt-2 align-items-center flex-wrap">
+                        <button class="d-flex flex-row gap-1 tw-400 t-18 th-36 btn-nostyle text-green"><i
+                                class="bi bi-reply-fill"></i> افزودن پاسخ</button>
+                        <div class="d-flex flex-row gap-2 text-gray-100">
+                            <div class="d-flex gap-1 align-items-center">
+                                <div>34</div>
+                                <i class="bi bi-chat-right _icon"></i>
+                            </div>
+                            <div class="d-flex gap-1 align-items-center">
+                                <div>212</div>
+                                <i class="bi bi-heart _icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment p-4 mt-4">
+                        <div class="comment-info d-flex flex-row justify-content-start gap-2 ">
+                            <img src="../assets/svg/profile.svg">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="text-gray-200">كاربر مهمان</span>
+                                <span class="comment-date text-gray-100">1400/07/03 - 15:30</span>
+                            </div>
+                        </div>
+                        <div class="content mt-3 text-gray-200 t-18-md th-36-md tw-400 t-16 th-28">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                            نیاز
+                            و
+                            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+                            حال
+                            و
+                            آینده شناخت فراوان جام
+                        </div>
+                        <div class="comment-footer d-flex flex-row justify-content-between mt-2 align-items-center flex-wrap">
+                            <button class="d-flex flex-row gap-1 tw-400 t-18 th-36 btn-nostyle text-green"><i
+                                    class="bi bi-reply-fill"></i> افزودن پاسخ</button>
+                            <div class="d-flex flex-row gap-2 text-gray-100">
+                                <div class="d-flex gap-1 align-items-center">
+                                    <div>34</div>
+                                    <i class="bi bi-chat-right _icon"></i>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <div>212</div>
+                                    <i class="bi bi-heart _icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment p-4 mt-4">
+                            <div class="comment-info d-flex flex-row justify-content-start gap-2 ">
+                                <img src="../assets/svg/profile.svg">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="text-gray-200">كاربر مهمان</span>
+                                    <span class="comment-date text-gray-100">1400/07/03 - 15:30</span>
+                                </div>
+                            </div>
+                            <div class="content mt-3 text-gray-200 t-18-md th-36-md tw-400 t-16 th-28">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.
+                                چاپگرها
+                                و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                مورد نیاز
+                                و
+                                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد
+                                گذشته، حال
+                                و
+                                آینده شناخت فراوان جام
+                            </div>
+                            <div class="comment-footer d-flex flex-row justify-content-between mt-2 align-items-center flex-wrap">
+                                <button class="d-flex flex-row gap-1 tw-400 t-18 th-36 btn-nostyle text-green"><i
+                                        class="bi bi-reply-fill"></i> افزودن پاسخ</button>
+                                <div class="d-flex flex-row gap-2 text-gray-100">
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <div>34</div>
+                                        <i class="bi bi-chat-right _icon"></i>
+                                    </div>
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <div>212</div>
+                                        <i class="bi bi-heart _icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button onclick="gototop()" id="gototop"><i class="bi bi-chevron-up"></i></button>
+
+    <footer class="footer-container">
+        <footer class="top-footer container-xl">
+            <div class="footer-info">
+                <div class="logo-footer"><img src="../assets/img/logo.png" alt=""><a href="">Khodshenasi.me</a></div>
+                <br>
+                <div class="site-info">
+                    <p class="text">این سایت توسط جمعی از علاقمندان به جلسات خودشناسی حاج آقا نوروزی، راه‌اندازی شده
+                        تمام جلسات و محتوا کاملا رایگان است و نشر و کپی برداری با ذکر منبع مجاز است ارتباط با ما از طریق
+                        ایمیل:<a class="email" href="info@khodshenasi.me">info@khodshenasi.me</a> و شبکه‌های اجتماعی:
+                    </p>
+                    <div class="socials">
+                        <a class="social" href="#"></a>
+                        <a class="social" href="#"></a>
+                        <a class="social" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-access">
+                <div class="">دسترسی سريع</div>
+                <ul>
+                    <li><a href="#">دوره مقدماتی خوشنويسی</a></li>
+                    <li><a href="#">منتخب صوت</a></li>
+                    <li><a href="#">پاد كست</a></li>
+                    <li><a href="#">ساير دوره های خودشناسی</a></li>
+                    <li><a href="#">منتخب متن</a></li>
+                    <li><a href="#">سولات متداول</a></li>
+                    <li><a href="#">جلسات هفتگی</a></li>
+                </ul>
+            </div>
+        </footer>
+        <footer class="bottom-footer">
+            <div class="line"></div>
+            <div class="copyright">تمام حقوق برای وبسايت خودشناسی محفوظ است - 1400</div>
+        </footer>
+    </footer>
+
+    <script src="../assets/js/jquery3.6.js"></script>
+    <script src="../assets/js/classes/Scroll.js"></script>
+    <script src="../assets/js/MenuBar.js"></script>
+    <script src="../assets/js/goto.js"></script>
+    <script src="../assets/js/Slider.js"></script>
+    <script src="../assets/js/Header.js"></script>
+    <script src="../assets/js/InnerBlog.js"></script>
+
+</body>
+
+</html>

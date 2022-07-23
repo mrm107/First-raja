@@ -1,16 +1,15 @@
-export default class Scroll {
+class Scroll {
 
     constructor() {
         this.last_pos = 0
     }
-
     ScrollDirection() {
         let current = window.pageYOffset;
-        if (current > last_pos) {
+        if (current > this.last_pos) {
             this.last_pos = current;
             return true;
         }
-        if (current < last_pos) {
+        if (current < this.last_pos) {
             this.last_pos = current;
             return false;
         }
@@ -18,5 +17,5 @@ export default class Scroll {
 }
 
 
-// export default Scroll;
+// export Scroll;
 // module.exports = Scroll;

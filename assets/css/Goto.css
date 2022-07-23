@@ -3,6 +3,29 @@
   src: url("../font/Shabnam-FD.woff");
 }
 
+.text-gray-100 {
+  color: #999999;
+}
+
+.text-gray-200 {
+  color: #666666;
+}
+
+.text-black {
+  color: #111111;
+}
+
+.text-green {
+  color: #2C9564;
+}
+
+.btn-nostyle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +34,7 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #FAFAFA;
 }
 
 a {
@@ -23,11 +46,246 @@ li {
   list-style: none;
 }
 
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+.gap-1 {
+  gap: 7px;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.t-34 {
+  font-size: 34px;
+}
+
+.t-28 {
+  font-size: 28px;
+}
+
+.t-20 {
+  font-size: 20px;
+}
+
+.t-18 {
+  font-size: 18px;
+}
+
+.t-16 {
+  font-size: 16px;
+}
+
+.t-14 {
+  font-size: 14px;
+}
+
+.th-46 {
+  line-height: 46px;
+}
+
+.th-38 {
+  line-height: 38px;
+}
+
+.th-36 {
+  line-height: 36px;
+}
+
+.th-30 {
+  line-height: 30px;
+}
+
+.th-28 {
+  line-height: 28px;
+}
+
+.th-27 {
+  line-height: 27px;
+}
+
+.tw-700 {
+  font-weight: 700;
+}
+
+.tw-500 {
+  font-weight: 500;
+}
+
+.tw-400 {
+  font-weight: 400;
+}
+
+.tw-300 {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 922px) {
+  .tw-700-lg {
+    font-weight: 700 !important;
+  }
+  .tw-500-lg {
+    font-weight: 500 !important;
+  }
+  .tw-400-lg {
+    font-weight: 400 !important;
+  }
+  .tw-300-lg {
+    font-weight: 300 !important;
+  }
+  .t-34-lg {
+    font-size: 34px !important;
+  }
+  .t-28-lg {
+    font-size: 28px !important;
+  }
+  .t-20-lg {
+    font-size: 20px !important;
+  }
+  .t-18-lg {
+    font-size: 18px !important;
+  }
+  .t-16-lg {
+    font-size: 16px !important;
+  }
+  .t-14-lg {
+    font-size: 14px !important;
+  }
+  .th-46-lg {
+    line-height: 46px !important;
+  }
+  .th-38-lg {
+    line-height: 38px !important;
+  }
+  .th-36-lg {
+    line-height: 36px !important;
+  }
+  .th-30-lg {
+    line-height: 30px !important;
+  }
+  .th-28-lg {
+    line-height: 28px !important;
+  }
+  .th-27-lg {
+    line-height: 27px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tw-700-md {
+    font-weight: 700 !important;
+  }
+  .tw-500-md {
+    font-weight: 500 !important;
+  }
+  .tw-400-md {
+    font-weight: 400 !important;
+  }
+  .tw-300-md {
+    font-weight: 300 !important;
+  }
+  .t-34-md {
+    font-size: 34px !important;
+  }
+  .t-28-md {
+    font-size: 28px !important;
+  }
+  .t-20-md {
+    font-size: 20px !important;
+  }
+  .t-18-md {
+    font-size: 18px !important;
+  }
+  .t-16-md {
+    font-size: 16px !important;
+  }
+  .t-14-md {
+    font-size: 14px !important;
+  }
+  .th-46-md {
+    line-height: 46px !important;
+  }
+  .th-38-md {
+    line-height: 38px !important;
+  }
+  .th-36-md {
+    line-height: 36px !important;
+  }
+  .th-30-md {
+    line-height: 30px !important;
+  }
+  .th-28-md {
+    line-height: 28px !important;
+  }
+  .th-27-md {
+    line-height: 27px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .tw-700-sm {
+    font-weight: 700 !important;
+  }
+  .tw-500-sm {
+    font-weight: 500 !important;
+  }
+  .tw-400-sm {
+    font-weight: 400 !important;
+  }
+  .tw-300-sm {
+    font-weight: 300 !important;
+  }
+  .t-34-sm {
+    font-size: 34px !important;
+  }
+  .t-28-sm {
+    font-size: 28px !important;
+  }
+  .t-20-sm {
+    font-size: 20px !important;
+  }
+  .t-18-sm {
+    font-size: 18px !important;
+  }
+  .t-16-sm {
+    font-size: 16px !important;
+  }
+  .t-14-sm {
+    font-size: 14px !important;
+  }
+  .th-46-sm {
+    line-height: 46px !important;
+  }
+  .th-38-sm {
+    line-height: 38px !important;
+  }
+  .th-36-sm {
+    line-height: 36px !important;
+  }
+  .th-30-sm {
+    line-height: 30px !important;
+  }
+  .th-28-sm {
+    line-height: 28px !important;
+  }
+  .th-27-sm {
+    line-height: 27px !important;
+  }
 }
 
 #gototop {
@@ -40,6 +298,7 @@ li {
   background-color: #2C9564;
   color: #FFFFFF;
   transition: .5s;
+  position: fixed;
   cursor: pointer;
 }
 
@@ -48,12 +307,10 @@ li {
 }
 
 .gototop_show {
-  position: fixed;
   right: 5px;
 }
 
 .gototop_hide {
-  position: fixed;
   right: -60px;
 }
 /*# sourceMappingURL=Goto.css.map */

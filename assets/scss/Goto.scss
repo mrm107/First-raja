@@ -9,6 +9,7 @@
     background-color: $color-green;
     color: $color-white;
     transition: .5s;
+    position: fixed;
     cursor: pointer;
     &:hover{
         background-color: #58C383;
@@ -17,12 +18,10 @@
 
 
 .gototop_show{
-    position: fixed;
     right: 5px;
 }
 
 .gototop_hide{
-    position: fixed;
     right: -60px;
 }
 

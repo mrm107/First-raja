@@ -1,0 +1,1 @@
+window.onscroll = () => { show_hide_gototop(), show_hide_header() };

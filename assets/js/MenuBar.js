@@ -1,8 +1,5 @@
 $(".hamburger-menu").click(function (e) {
     if ($("#hamburger").is(':checked')) {
-        $(".hamburger-menu").css({
-            "transform": "rotateZ(45deg)",
-        });
         $(".navbar").animate({
             "left": "0",
             "top": "64px",
@@ -39,16 +36,6 @@ window.onclick = function (event) {
     }
 }
 
-
-// let hover = 0;
-// $(".banner img").hover(function () {
-//     hover++;
-// }, function () {
-//     if (hover === 10) {
-//         $(".banner").text("خوشت اومده ها!!!");
-//     }
-// }
-// );
 
 
 
